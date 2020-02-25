@@ -21,12 +21,15 @@ requirements:
     - setuptools
   run:
     - python
+    - pip
     - pymongo
     - docutils >=0.3
 
 test:
   imports:
     - smoqe
+  commands:
+    - pip check
 
 about:
   home: https://github.com/dangunter/smoqe
